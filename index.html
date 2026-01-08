@@ -1,136 +1,385 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bimbel Ceria - Belajar Jadi Seru!</title>
+    <title>Bimbel Ceria - Pusat Keunggulan Akademik</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body { font-family: 'Poppins', sans-serif; }
-        h1, h2, h3 { font-family: 'Fredoka', sans-serif; }
-        .blob { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Quicksand', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
+        .pattern-bg {
+            background-image: radial-gradient(#3b82f6 0.5px, transparent 0.5px), radial-gradient(#3b82f6 0.5px, #f0f9ff 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
     </style>
 </head>
-<body class="bg-yellow-50 text-gray-800">
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-    <section class="relative bg-blue-400 text-white overflow-hidden py-20 px-6">
-        <div class="container mx-auto flex flex-col md:flex-row items-center relative z-10">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Belajar Seru, <br><span class="text-yellow-300">Prestasi Melejit!</span></h1>
-                <p class="text-xl mb-8">Bimbel Ceria membantu buah hati Anda memahami pelajaran dengan metode yang menyenangkan dan interaktif.</p>
-                <a href="#daftar" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-xl transition transform hover:scale-105 inline-block">
-                    Daftar Sekarang!
-                </a>
+    <nav class="fixed top-0 w-full z-50 glass border-b border-slate-200 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">B</div>
+                <span class="text-xl font-bold text-slate-900 tracking-tight">Bimbel<span class="text-blue-600">Ceria</span></span>
+            </a>
+            
+            <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
+                <a href="#program" class="hover:text-blue-600 transition">Program</a>
+                <a href="#fasilitas" class="hover:text-blue-600 transition">Fasilitas</a>
+                <a href="#tutor" class="hover:text-blue-600 transition">Pengajar</a>
+                <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
             </div>
-            <div class="md:w-1/2 flex justify-center">
-                <div class="w-72 h-72 bg-yellow-300 blob flex items-center justify-center shadow-2xl animate-pulse">
-                    <span class="text-8xl">🚀</span>
+
+            <a href="#daftar" class="hidden md:inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-bold transition shadow-lg shadow-blue-200">
+                Daftar Trial Gratis
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 overflow-hidden pattern-bg">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <div class="inline-block px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-xs font-bold uppercase tracking-wider mb-6 border border-blue-100">
+                        🎓 Terakreditasi & Terpercaya
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-[1.15] text-slate-900">
+                        Wujudkan Potensi <br>
+                        <span class="text-blue-600">Terbaik Buah Hati</span>
+                    </h1>
+                    <p class="text-lg text-slate-500 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0">
+                        Metode pembelajaran adaptif yang disesuaikan dengan gaya belajar anak. Fokus pada pemahaman konsep, bukan sekadar menghafal.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#daftar" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition shadow-xl shadow-blue-200 flex items-center justify-center gap-2">
+                            Mulai Belajar
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#program" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 font-bold py-4 px-8 rounded-xl transition flex items-center justify-center gap-2">
+                            <i data-lucide="book-open" class="w-5 h-5"></i>
+                            Lihat Program
+                        </a>
+                    </div>
+                    
+                    <div class="mt-12 grid grid-cols-3 gap-6 border-t border-slate-200 pt-8">
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-900">500+</h4>
+                            <p class="text-xs text-slate-500 font-medium uppercase">Siswa Aktif</p>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-900">98%</h4>
+                            <p class="text-xs text-slate-500 font-medium uppercase">Lulus Ujian</p>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-900">50+</h4>
+                            <p class="text-xs text-slate-500 font-medium uppercase">Tutor Pakar</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 relative">
+                    <div class="absolute -z-10 top-10 right-10 w-full h-full bg-blue-100 rounded-[3rem] transform rotate-3"></div>
+                    <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1000&auto=format&fit=crop" alt="Student Studying" class="rounded-[3rem] shadow-2xl border-8 border-white w-full object-cover h-[500px]">
+                    
+                    <div class="absolute bottom-10 -left-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-bounce duration-[3000ms]">
+                        <div class="bg-green-100 p-3 rounded-full text-green-600">
+                            <i data-lucide="trophy" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-bold uppercase">Prestasi</p>
+                            <p class="font-bold text-slate-900">Juara 1 Olimpiade Matematika</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-300 rounded-full opacity-50"></div>
-        <div class="absolute bottom-0 right-0 w-60 h-60 bg-pink-400 rounded-full opacity-30 translate-y-1/2 translate-x-1/4"></div>
     </section>
 
-    <section class="py-20 px-6 container mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-16 text-blue-600">Pilih Kelas Favoritmu!</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div class="bg-white p-8 rounded-3xl shadow-lg border-b-8 border-orange-400 hover:-translate-y-2 transition">
-                <div class="text-5xl mb-4">🎨</div>
-                <h3 class="text-2xl font-bold mb-4 text-orange-500">PAUD & TK</h3>
-                <p>Membaca, Menulis, Menghitung, dan Mewarnai dengan riang gembira.</p>
+    <section id="program" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-blue-600 font-bold text-sm tracking-widest uppercase">Kurikulum Terpadu</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-slate-900">Jenjang Pendidikan</h2>
+                <p class="text-slate-500">Kami menyediakan program komprehensif dari usia dini hingga persiapan perguruan tinggi.</p>
             </div>
-            <div class="bg-white p-8 rounded-3xl shadow-lg border-b-8 border-green-400 hover:-translate-y-2 transition">
-                <div class="text-5xl mb-4">🎒</div>
-                <h3 class="text-2xl font-bold mb-4 text-green-500">SD (Kelas 1-6)</h3>
-                <p>Fokus Matematika, IPA, dan Bahasa Inggris dengan metode mudah.</p>
-            </div>
-            <div class="bg-white p-8 rounded-3xl shadow-lg border-b-8 border-purple-400 hover:-translate-y-2 transition">
-                <div class="text-5xl mb-4">🧪</div>
-                <h3 class="text-2xl font-bold mb-4 text-purple-500">Persiapan Ujian</h3>
-                <p>Siap hadapi ujian sekolah dengan bank soal terlengkap dan trik cepat.</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 rounded-3xl p-8 hover:bg-white hover:shadow-xl transition duration-300 border border-slate-100 group">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="blocks" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Calistung (TK - SD 2)</h3>
+                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">Membangun pondasi membaca, menulis, dan berhitung dengan metode bermain yang menyenangkan agar anak tidak stres.</p>
+                    <ul class="text-sm text-slate-600 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i> Motorik Halus</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i> Pengenalan Angka & Huruf</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-50 rounded-3xl p-8 hover:bg-white hover:shadow-xl transition duration-300 border border-slate-100 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-xl">POPULER</div>
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="book-open-check" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">SD - SMP (Reguler)</h3>
+                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">Pendampingan materi sekolah harian, PR, dan persiapan ulangan harian. Fokus pada Matematika, IPA, dan Bahasa Inggris.</p>
+                    <ul class="text-sm text-slate-600 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i> Bedah Konsep Dasar</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i> Trik Cepat Hitung</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-50 rounded-3xl p-8 hover:bg-white hover:shadow-xl transition duration-300 border border-slate-100 group">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="graduation-cap" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Intensif Ujian (UN/SNBT)</h3>
+                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">Program khusus drill soal-soal ujian nasional dan seleksi masuk perguruan tinggi negeri dengan analisis mendalam.</p>
+                    <ul class="text-sm text-slate-600 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i> Bank Soal 10 Tahun</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-green-500"></i> Try Out Berkala</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-white py-20 px-6">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-16 text-pink-500">Kenapa Harus di Bimbel Ceria?</h2>
-            <div class="flex flex-wrap justify-center gap-10">
-                <div class="flex items-center space-x-4 bg-yellow-100 p-6 rounded-2xl w-full md:w-80">
-                    <span class="text-4xl">❄️</span>
-                    <span class="font-semibold text-lg">Ruangan Full AC</span>
+    <section id="fasilitas" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000" alt="Classroom" class="rounded-[2.5rem] shadow-2xl">
                 </div>
-                <div class="flex items-center space-x-4 bg-blue-100 p-6 rounded-2xl w-full md:w-80">
-                    <span class="text-4xl">👥</span>
-                    <span class="font-semibold text-lg">Kelas Kecil (Max 5 Anak)</span>
-                </div>
-                <div class="flex items-center space-x-4 bg-green-100 p-6 rounded-2xl w-full md:w-80">
-                    <span class="text-4xl">🍿</span>
-                    <span class="font-semibold text-lg">Snack & Minum Gratis</span>
-                </div>
-                <div class="flex items-center space-x-4 bg-purple-100 p-6 rounded-2xl w-full md:w-80">
-                    <span class="text-4xl">🏆</span>
-                    <span class="font-semibold text-lg">Reward Stiker & Hadiah</span>
+                <div class="lg:w-1/2">
+                    <span class="text-blue-600 font-bold text-sm tracking-widest uppercase">Fasilitas Premium</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6 text-slate-900">Lingkungan Belajar yang Nyaman & Kondusif</h2>
+                    <p class="text-slate-500 mb-8">Kami percaya bahwa lingkungan yang baik akan menstimulasi otak anak untuk menyerap pelajaran lebih cepat.</p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-white p-3 rounded-xl shadow-sm text-blue-600">
+                                <i data-lucide="users" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Semi-Private Class</h4>
+                                <p class="text-sm text-slate-500">Maksimal 5-8 siswa per kelas agar tutor bisa fokus ke setiap anak.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-white p-3 rounded-xl shadow-sm text-blue-600">
+                                <i data-lucide="snowflake" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Full AC & Multimedia</h4>
+                                <p class="text-sm text-slate-500">Ruang kelas sejuk dengan proyektor dan alat peraga modern.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-white p-3 rounded-xl shadow-sm text-blue-600">
+                                <i data-lucide="file-bar-chart" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">Laporan Perkembangan Bulanan</h4>
+                                <p class="text-sm text-slate-500">Orang tua mendapatkan report card detail mengenai progress anak via WhatsApp.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="daftar" class="py-20 px-6 container mx-auto max-w-2xl">
-        <div class="bg-blue-500 p-10 rounded-[40px] shadow-2xl text-white">
-            <h2 class="text-3xl font-bold text-center mb-8">Daftar Sekarang Yuk!</h2>
-            <form id="registrationForm" class="space-y-6">
-                <div>
-                    <label class="block mb-2 font-semibold text-white">Nama Lengkap Anak</label>
-                    <input type="text" id="nama" class="w-full p-4 rounded-xl text-gray-800 outline-none focus:ring-4 ring-yellow-300" placeholder="Contoh: Budi Santoso" required>
+    <section id="tutor" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Pengajar Profesional</h2>
+                <p class="text-slate-500">Dibimbing oleh lulusan universitas ternama yang sabar dan berpengalaman.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="text-center group">
+                    <div class="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-slate-100 group-hover:border-blue-200 transition">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg">Ms. Sarah, S.Pd</h3>
+                    <p class="text-blue-600 text-sm font-medium">Spesialis Bahasa Inggris</p>
                 </div>
-                <div>
-                    <label class="block mb-2 font-semibold text-white">Kelas / Jenjang</label>
-                    <select id="kelas" class="w-full p-4 rounded-xl text-gray-800 outline-none focus:ring-4 ring-yellow-300">
-                        <option value="PAUD/TK">PAUD/TK</option>
-                        <option value="SD Kelas 1-3">SD Kelas 1-3</option>
-                        <option value="SD Kelas 4-6">SD Kelas 4-6</option>
-                        <option value="SMP">SMP</option>
-                    </select>
+                <div class="text-center group">
+                    <div class="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-slate-100 group-hover:border-blue-200 transition">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg">Mr. Budi, S.Si</h3>
+                    <p class="text-blue-600 text-sm font-medium">Spesialis Matematika & Fisika</p>
                 </div>
-                <div>
-                    <label class="block mb-2 font-semibold text-white">Nomor WA Orang Tua</label>
-                    <input type="tel" id="whatsapp" class="w-full p-4 rounded-xl text-gray-800 outline-none focus:ring-4 ring-yellow-300" placeholder="08123xxx" required>
+                <div class="text-center group">
+                    <div class="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-slate-100 group-hover:border-blue-200 transition">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg">Ms. Dina, S.Pd</h3>
+                    <p class="text-blue-600 text-sm font-medium">Spesialis Calistung</p>
                 </div>
-                <button type="button" onclick="sendToWA()" class="w-full bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-4 rounded-xl text-xl shadow-lg transition transform hover:scale-105 flex items-center justify-center gap-2">
-                    Kirim via WhatsApp 📱
-                </button>
-            </form>
+                <div class="text-center group">
+                    <div class="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-slate-100 group-hover:border-blue-200 transition">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg">Mr. Anton, M.Sc</h3>
+                    <p class="text-blue-600 text-sm font-medium">Spesialis Kimia</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-gray-100 py-10 text-center text-gray-500">
-        <p>&copy; 2024 Bimbel Ceria. Belajar dengan Hati, Prestasi Menanti.</p>
+    <section id="faq" class="py-20 bg-slate-50 border-y border-slate-200">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-3xl font-bold text-center mb-10">Pertanyaan Umum (FAQ)</h2>
+            <div class="space-y-4">
+                <details class="group bg-white rounded-2xl p-6 shadow-sm cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between font-bold text-slate-800">
+                        Apakah ada kelas pengganti jika anak sakit?
+                        <span class="ml-4 transition-transform group-open:rotate-180">
+                            <i data-lucide="chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-4 text-slate-500 leading-relaxed text-sm">
+                        Ya, tentu saja. Kami menyediakan fasilitas <strong>Reschedule</strong> kelas maksimal 2x dalam sebulan dengan pemberitahuan minimal 3 jam sebelum kelas dimulai.
+                    </p>
+                </details>
+
+                <details class="group bg-white rounded-2xl p-6 shadow-sm cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between font-bold text-slate-800">
+                        Apakah bisa request materi PR sekolah?
+                        <span class="ml-4 transition-transform group-open:rotate-180">
+                            <i data-lucide="chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-4 text-slate-500 leading-relaxed text-sm">
+                        Sangat bisa. Siswa diperbolehkan membawa PR sekolah untuk dibahas bersama tutor di sesi konsultasi PR yang tersedia setiap hari sebelum kelas dimulai.
+                    </p>
+                </details>
+
+                <details class="group bg-white rounded-2xl p-6 shadow-sm cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between font-bold text-slate-800">
+                        Berapa biaya pendaftarannya?
+                        <span class="ml-4 transition-transform group-open:rotate-180">
+                            <i data-lucide="chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-4 text-slate-500 leading-relaxed text-sm">
+                        Biaya pendaftaran adalah Rp 150.000 (sekali bayar seumur hidup), sudah termasuk modul, tas, dan alat tulis. Biaya bulanan bervariasi tergantung jenjang.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="daftar" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="bg-slate-900 text-white rounded-[2.5rem] p-10 shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
+                    
+                    <h2 class="text-3xl font-bold mb-2">Formulir Pendaftaran</h2>
+                    <p class="text-slate-400 mb-8 text-sm">Isi data di bawah ini untuk konsultasi gratis atau mendaftar.</p>
+                    
+                    <form id="regForm" class="space-y-5 relative z-10">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Nama Orang Tua</label>
+                            <input type="text" id="parentName" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nama Anda...">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Nama Anak</label>
+                            <input type="text" id="childName" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nama Putra/Putri...">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Jenjang</label>
+                                <select id="grade" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="TK">TK / PAUD</option>
+                                    <option value="SD 1-3">SD Kelas 1-3</option>
+                                    <option value="SD 4-6">SD Kelas 4-6</option>
+                                    <option value="SMP">SMP</option>
+                                    <option value="SMA">SMA / Persiapan Kuliah</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">No. WhatsApp</label>
+                                <input type="tel" id="whatsapp" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="0812...">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Pesan Tambahan (Opsional)</label>
+                            <textarea id="message" rows="2" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Misal: Anak saya lemah di matematika..."></textarea>
+                        </div>
+
+                        <button type="button" onclick="sendWhatsapp()" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl shadow-lg transition transform hover:-translate-y-1 mt-4 flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                            Kirim ke Admin
+                        </button>
+                    </form>
+                </div>
+
+                <div class="flex flex-col h-full">
+                    <div class="bg-slate-100 rounded-[2.5rem] h-full min-h-[400px] overflow-hidden border-4 border-white shadow-lg relative">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.24097834725!2d106.75624795000001!3d-6.2297465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%2C%20Special%20Capital%20Region%20of%20Jakarta!5e0!3m2!1sen!2sid!4v1652174236000!5m2!1sen!2sid" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="mt-6 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                        <h3 class="font-bold text-lg mb-2 flex items-center gap-2">
+                            <i data-lucide="map-pin" class="text-blue-600 w-5 h-5"></i> Lokasi Pusat
+                        </h3>
+                        <p class="text-slate-500 text-sm">Jl. Pendidikan No. 45, Komplek Pelajar, Jakarta Selatan.<br>(Seberang Taman Kota)</p>
+                        <div class="mt-4 flex gap-4 text-sm text-slate-600">
+                            <a href="#" class="flex items-center gap-2 hover:text-blue-600"><i data-lucide="phone" class="w-4 h-4"></i> (021) 789-1234</a>
+                            <a href="#" class="flex items-center gap-2 hover:text-blue-600"><i data-lucide="instagram" class="w-4 h-4"></i> @bimbelceria</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-slate-200 py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-slate-500 text-sm">&copy; 2024 Bimbel Ceria. Mendidik Generasi Emas Indonesia.</p>
+        </div>
     </footer>
 
     <script>
-        function sendToWA() {
-            // Ganti nomor di bawah ini dengan nomor WA Admin Bimbel (awali dengan 62)
-            const adminNumber = "6281234567890"; 
-            
-            const nama = document.getElementById('nama').value;
-            const kelas = document.getElementById('kelas').value;
-            const waOrtu = document.getElementById('whatsapp').value;
+        lucide.createIcons();
 
-            if(nama === "" || waOrtu === "") {
-                alert("Harap isi semua data ya!");
+        function sendWhatsapp() {
+            const adminNumber = "6281234567890"; // GANTI NOMOR WA DISINI
+            
+            const parent = document.getElementById('parentName').value;
+            const child = document.getElementById('childName').value;
+            const grade = document.getElementById('grade').value;
+            const phone = document.getElementById('whatsapp').value;
+            const msg = document.getElementById('message').value;
+
+            if(!parent || !child || !phone) {
+                alert("Mohon lengkapi Nama Orang Tua, Nama Anak, dan No WA.");
                 return;
             }
 
-            const message = `Halo Admin Bimbel Ceria! 👋%0A%0ASaya ingin mendaftarkan anak saya:%0A%0A*Nama:* ${nama}%0A*Kelas:* ${kelas}%0A*No. WA:* ${waOrtu}%0A%0AMohon info jadwal dan biayanya ya. Terima kasih!`;
+            let text = `Halo Admin Bimbel Ceria! 👋%0A`;
+            text += `Saya tertarik untuk mendaftar/bertanya.%0A%0A`;
+            text += `*Data Calon Siswa:*%0A`;
+            text += `👤 Orang Tua: ${parent}%0A`;
+            text += `👶 Siswa: ${child}%0A`;
+            text += `📚 Jenjang: ${grade}%0A`;
+            text += `📱 No. WA: ${phone}%0A`;
             
-            const whatsappURL = `https://wa.me/${adminNumber}?text=${message}`;
-            
-            window.open(whatsappURL, '_blank');
+            if(msg) {
+                text += `📝 Catatan: ${msg}%0A`;
+            }
+
+            text += `%0AMohon infonya lebih lanjut, terima kasih!`;
+
+            window.open(`https://wa.me/${adminNumber}?text=${text}`, '_blank');
         }
     </script>
-
 </body>
 </html>
